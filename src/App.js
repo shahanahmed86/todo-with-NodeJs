@@ -30,9 +30,10 @@ class App extends Component {
         })
       })
       .catch(err => {
+        console.log(err)
         this.setState({
           open: true,
-          msg: err,
+          msg: 'Network Error',
         })
       })
   }
@@ -62,9 +63,10 @@ class App extends Component {
           this.getData();
         })
         .catch(err => {
+          console.log(err)
           this.setState({
             open: true,
-            msg: err,
+            msg: 'Network Error',
           })
         })
     }
@@ -82,9 +84,10 @@ class App extends Component {
           this.getData();
         })
         .catch(err => {
+          console.log(err)
           this.setState({
             open: true,
-            msg: err,
+            msg: 'Network Error',
           })
         })
     }
@@ -112,9 +115,10 @@ class App extends Component {
         this.getData();
       })
       .catch(err => {
+        console.log(err)
         this.setState({
           open: true,
-          msg: err,
+          msg: 'Network Error',
         })
       })
   }
